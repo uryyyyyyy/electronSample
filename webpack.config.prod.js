@@ -7,7 +7,7 @@ module.exports = {
     path: './dist'
   },
   resolve: {
-    extensions: [".jsx", ".js"]
+    extensions: [".js"]
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
       }

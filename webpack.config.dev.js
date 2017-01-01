@@ -6,12 +6,12 @@ module.exports = {
   },
   devtool: "source-map",
   resolve: {
-    extensions: [".jsx", ".js"]
+    extensions: [".js"]
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         exclude: /node_modules/,
         loader: "babel-loader"
       }
