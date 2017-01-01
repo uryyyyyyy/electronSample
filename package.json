@@ -11,11 +11,10 @@
     "build:prod:win": "electron-packager ./ app --platform=win32 --arch=x64 --version=1.4.3"
   },
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "asar": "^0.12.3",
-    "electron-packager": "^8.1.0",
-    "electron-prebuilt": "1.4.3"
+    "asar": "^0.12.4",
+    "electron-packager": "^8.4.0",
+    "electron-prebuilt": "^1.4.3"
   }
 }
