@@ -9,3 +9,4 @@ app-linux-x64/
 app-mas-x64/
 app.asar
 .DS_Store
+flow-typed/

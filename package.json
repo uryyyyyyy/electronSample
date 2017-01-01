@@ -7,6 +7,7 @@
     "build:prod": "webpack --config ./webpack.config.prod.js",
     "start": "electron ./",
     "flow": "flow",
+    "flow-typed": "flow-typed install",
     "package:asar": "rm -f app.asar && asar pack ./ app.asar",
     "start:asar": "electron app.asar",
     "package:mac": "rm -f -r app-darwin-x64 && electron-packager ./ app --platform=darwin --arch=x64 --version=1.4.3",
@@ -30,6 +31,7 @@
     "electron-packager": "^8.4.0",
     "electron-prebuilt": "^1.4.3",
     "flow-bin": "^0.37.0",
+    "flow-typed": "^2.0.0",
     "webpack": "^2.2.0-rc.3"
   }
 }
