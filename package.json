@@ -3,16 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
-    "build:watch": "babel src --watch --out-dir dist",
-    "build:prod": "webpack --config ./webpack.config.js",
+    "build": "webpack --config ./webpack.config.dev.js",
+    "build:prod": "webpack --config ./webpack.config.prod.js",
     "start": "electron ./",
     "flow": "flow",
-    "package:asar": "asar pack ./ app.asar",
+    "package:asar": "rm -f app.asar && asar pack ./ app.asar",
     "start:asar": "electron app.asar",
-    "package:mac": "electron-packager ./ app --platform=darwin --arch=x64 --version=1.4.3",
-    "package:linux": "electron-packager ./ app --platform=linux --arch=x64 --version=1.4.3",
-    "package:win": "electron-packager ./ app --platform=win32 --arch=x64 --version=1.4.3"
+    "package:mac": "rm -f -r app-darwin-x64 && electron-packager ./ app --platform=darwin --arch=x64 --version=1.4.3",
+    "package:linux": "rm -f -r app-linux-x64 && electron-packager ./ app --platform=linux --arch=x64 --version=1.4.3",
+    "package:win": "rm -f -r app-win32-x64 && electron-packager ./ app --platform=win32 --arch=x64 --version=1.4.3"
   },
   "license": "MIT",
   "dependencies": {

@@ -18,6 +18,11 @@ export class Hello extends Component<void, Props, State> {
   }
 
   render() {
-    return <div>{`${this.props.content} - ${this.state.count}`}</div>
+    return (
+      <div>
+        <div>{`${this.props.content} - ${this.state.count}`}</div>
+        {/*<img src={'file:./assets/uryyyyyyy.png'}/>*/}
+      </div>
+    );
   }
 }
