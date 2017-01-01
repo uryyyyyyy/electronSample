@@ -1,5 +1,6 @@
-'use strict';
-console.log("hello");
+import 'babel-polyfill';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Hello} from './Hello';
 
-const dom = document.getElementById('app');
-dom.textContent = "hello world";
+ReactDOM.render(<Hello content="hello world"/>, document.getElementById('app'));
