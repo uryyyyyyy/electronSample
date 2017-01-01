@@ -1,0 +1,10 @@
+dist/
+node_modules/
+.idea/
+typings/
+npm-debug.log
+
+app-darwin-x64/
+app-linux-x64/
+app-mas-x64/
+app.asar

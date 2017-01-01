@@ -1,0 +1,21 @@
+{
+  "name": "electron-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "electron ./",
+    "build:asar": "asar pack ./ app.asar",
+    "start:asar": "electron app.asar",
+    "build:prod:mac": "electron-packager ./ app --platform=darwin --arch=x64 --version=1.4.3",
+    "build:prod:linux": "electron-packager ./ app --platform=linux --arch=x64 --version=1.4.3",
+    "build:prod:win": "electron-packager ./ app --platform=win32 --arch=x64 --version=1.4.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "asar": "^0.12.3",
+    "electron-packager": "^8.1.0",
+    "electron-prebuilt": "1.4.3"
+  }
+}
